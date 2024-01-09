@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hutor</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -15,18 +17,24 @@
         <header class="header">
             <div class="container header__container">
                 <a href="#" class="header__logo" aria-label="Логотип">
-                    <img src="./images/logo.svg" alt="Логотип">
+                    <img src="./images/icons/logo.svg" alt="Логотип">
                 </a>
                 <div class="header__body">
                     <div class="header__menu">
                         <nav class="header__nav">
                             <ul class="header__list">
-                                <li class="header__item"><a href="#" class="header__link link"
-                                        aria-label="Перейти к проекту">О ПРОЕКТЕ</a></li>
-                                <li class="header__item"><a href="#" class="header__link link"
-                                        aria-label="Перейти к галереи">ВИРТУАЛЬНЫЙ ТУР</a></li>
-                                <li class="header__item"><a href="#" class="header__link link"
-                                        aria-label="Перейти к контактам">КОНТАКТЫ</a></li>
+                                <li class="header__item">
+                                    <a href="#project" class="header__link link" aria-label="Перейти к проекту">О
+                                        ПРОЕКТЕ</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#interior" class="header__link link"
+                                        aria-label="Перейти к галереи">ВИРТУАЛЬНЫЙ ТУР</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="#contacts" class="header__link link"
+                                        aria-label="Перейти к контактам">КОНТАКТЫ</a>
+                                </li>
                             </ul>
                             <a class="header__link link" href="tel:79157650956"
                                 aria-label="Связаться с нами по телефону">+7 915 765-09-56
@@ -54,16 +62,18 @@
         </header>
         <main class="main">
             <section class="hero">
-                <img class="hero__img" src="./images/Hero_bg.png" alt="Фото домика в лесу">
+                <img class="hero__img" src="./images/Hero_bg.webp" alt="Фото домика в лесу">
+
                 <div class="hero__body">
                     <h1 class="hero__title">hutor</h1>
                     <span class="hero__subtitle">хутор - частный дом</span>
                 </div>
+
             </section>
             <section class="details">
                 <div class="container details__container">
                     <div class="details__content">
-                        <h2 class="details__title section__title">ХУТОР</h2>
+                        <h2 class="details__title title">ХУТОР</h2>
                         <ul class="details__list">
                             <li class="details__item">
                                 <span class="details__subtitle">Частный дом</span>
@@ -99,17 +109,25 @@
                         </ul>
                     </div>
                     <div class="details__imges">
-                        <img src="./images/details.png" alt="изображение интерьера">
+                        <img src="./images/details.webp" alt="изображение интерьера">
                     </div>
                 </div>
             </section>
-            <section class="project">
+            <section class="project" id="project">
                 <div class="container project__container">
-                    <div class="project__imges">
-                        <img src="./images/project.png" alt="изображение интерьера">
+                    <div class="project__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/project.webp" data-fancybox="gallery"
+                                    alt="изображение интерьера"></div>
+                            <div class="swiper-slide"><img src="./images/details.webp" data-fancybox="gallery" alt="">
+                            </div>
+                            <div class="swiper-slide"><img src="./images/project.webp" data-fancybox="gallery"
+                                    alt="изображение интерьера"></div>
+                        </div>
+
                     </div>
                     <div class="project__content">
-                        <h2 class="project__title section__title">О ПРОЕКТЕ</h2>
+                        <h2 class="project__title title">О ПРОЕКТЕ</h2>
                         <p class="project__text">
                             Проект частного дома в&nbsp;120 километрах от&nbsp;Санкт-Петербурга. Главной задачей проекта
                             было разработать помещение с&nbsp;минимальной площадью
@@ -119,13 +137,121 @@
                             кровлей и&nbsp;планкеном из&nbsp;лиственницы. Предназначен для круглогодичного проживания.
                             Обилие натуральных материалов создают уютную атмосферу. </p>
                         <p class="project__text">Главной особенностью интерьера является сочетание современного
-                            дизайна в&nbsp;стиле барн и&nbsp;функциональной наполняющей интерьера.</p>
+                            дизайна в&nbsp;стиле барн и&nbsp;функциональной наполняющей интерьера.
+                        </p>
+                        <div class="project__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="plan">
+                <div class="container plan__container">
+                    <div class="plan__content">
+                        <h2 class="plan__title title">ПЛАН</h2>
+                        <ol type="1" class="plan__list">
+                            <li class="plan__item">
+                                <span class="plan__subtitle">Холл, кухня</span>
+                                <span class="plan__text">7,7 м²</span>
+                            </li>
+                            <li class="plan__item">
+                                <span class="plan__subtitle">Гостинная</span>
+                                <span class="plan__text">21,5 м²</span>
+                            </li>
+                            <li class="plan__item">
+                                <span class="plan__subtitle">Спальная</span>
+                                <span class="plan__text">12 м²</span>
+                            </li>
+                            <li class="plan__item">
+                                <span class="plan__subtitle">Ванная</span>
+                                <span class="plan__text">4 м²</span>
+                            </li>
+                            <li class="plan__item">
+                                <span class="plan__subtitle">Мансарда</span>
+                                <span class="plan__text">12,5 м²</span>
+                            </li>
+                        </ol>
+                        <div class="plan__all">
+                            <span class="plan__subtitle">Обшая площадь:</span>
+                            <span class="plan__text">45,2 м²</span>
+                        </div>
+                    </div>
+                    <div class="plan__img">
+                        <img src="./images/Plan_1.webp" alt="">
+                    </div>
+                    <div class="plan__img-big">
+                        <img src="./images/Plan_2.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="interior" id="interior">
+                <div class="container interior__container">
+                    <h2 class="interior__title title">ИНТЕРЬЕР</h2>
+                    <div class="interior__images">
+                        <img class="interior__img" data-fancybox="gallery" src="./images/interior_1.webp" alt="">
+                        <img class="interior__img" data-fancybox="gallery" src="./images/interior_2.webp" alt="">
                     </div>
                 </div>
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__title title">ЗАПИШИТЕСЬ НА ПРОСМОТР</div>
+                <div class="footer__top">
+                    <form class="footer__form form" action="#">
+                        <input class="form__input" type="text" name="name" placeholder="Имя" maxlength="50" required>
+                        <input class="form__input" type="text" name="name" placeholder="Телефон" required>
+                        <button class="form__btn btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                    </form>
+                    <div class="footer__contacts contact" id="contacts">
+                        <div class="contact__item">
+                            <span class="contact__title">Телефон</span>
+                            <a class="contact__link contact__link--tel link" href="tel:79157650956
+                            ">+7 915 765-09-56
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__title">Почта</span>
+                            <a class="contact__link link" href="mailto:info@ds-au.ru">info@ds-au.ru
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <span class="contact__title">Адрес</span>
+                            <span class="contact__title">Санкт-Петербург, </span>
+                            <span class="contact__title">Ленинский пр. 151, офис 402
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="#" class="footer__logo" aria-label="Логотип">
+                        <img src="./images/icons/FooterLogo.svg" alt="Логотип">
+                    </a>
+                    <ul class="footer__social social">
+                        <li class="social__item">
+                            <a class="social__link link" href="https://vk.com" target="_blank"
+                                aria-label="Перейти на страницу во Вконтакте">
+                                <img src="./images/icons/VK.svg" alt="Иконка В котакте">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link link" href="https://t.me" target="_blank"
+                                aria-label="Перейти в Телеграм">
+                                <img src="./images/icons/Telegram.svg" alt="Иконка Телеграм">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link link" href="https://www.youtube.com/" target="_blank"
+                                aria-label="Перейти на Ютуб">
+                                <img src="./images/icons/IconYoutube.svg" alt="Иконка Ютуб">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
     <script src="./js/main.js"></script>
 </body>
 

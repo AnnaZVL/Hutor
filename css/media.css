@@ -1,3 +1,18 @@
+@media (max-width: 1200px) {
+    .details__list {
+        margin-bottom: 60px;
+    }
+
+    .details__item {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 990px;
@@ -5,6 +20,23 @@
 
     .header__nav {
         min-width: 550px;
+    }
+
+    .details__content,
+    .plan__container, 
+    .plan__img-big,
+    .footer__title,
+    .footer__top {
+        padding-left: 0;
+    }
+
+    .project__content,
+    .footer__form {
+        padding-left: 40px;
+    }
+
+    .interior__container {
+        margin-left: 0px;    
     }
 }
 
@@ -70,11 +102,204 @@
         text-align: center;
         width: 100%;
     }
+
+    .hero,
+    .details,
+    .plan,
+    .interior {
+        margin-bottom: 80px;
+    }
+
+    .hero__body {
+        top: 25%;
+    }
+
+    .hero__title {
+        font-size: 128px;
+        line-height: 128px;
+    }
+
+    .details__container {
+        grid-template-columns: 1fr;
+    }
+
+    .details__item, .info {
+        flex-direction: row;
+    }
+
+    .info {
+        justify-content: space-around;
+    }
+
+    .details__imges img {
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .project {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-bottom: 80px;
+    }
+
+    .project__container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project__container::after {
+        display: none;
+    }
+
+    .project__content {
+        padding-top: 60px;
+        position: relative;
+    }
+
+
+    .swiper-slide {
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        max-height: 400px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        position: absolute;
+        top: 0;
+        bottom: -100%;
+        height: 20px;
+        text-align: center;
+    }
+
+    .plan__title {
+        margin-left: 0;
+    }
+
+    .plan__container {
+        grid-template-columns: 1fr;        
+    }
+
+    .plan__list {
+        padding-left: 0;
+    }
+
+    .plan__img {
+        padding: 0;        
+    }
+
+    .plan__img img {
+        max-height: 300px;
+    }
+
+    .plan__img-big {
+        padding: 0;
+        grid-column: auto;
+    }
+
+    .interior {
+        padding-top: 0px;
+    }
+
+    .interior__images {
+        gap: 30px;
+        justify-content: space-around;
+    }
+
+    .interior__img {
+        max-height: 400px;
+    }
+
+    .interior__img:nth-child(2) {
+        margin-left: 0;    
+    }
+
+    .footer {
+        padding: 80px 0 30px 0;
+    }
+
+    .footer__title {
+        padding-left: 0;
+    }
+
+    .footer__top {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact__item {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer__social {
+        gap: 20px;
+    }
+    
 }
 
 @media (max-width: 562px) {
     .container {
         max-width: 532px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .hero {
+        font-size: 0;
+    }
+
+    .hero__body {
+        padding: 15px;
+        position: static;
+        width: 100%;        
+        align-items: center;
+    }
+
+    .hero__title, .hero__subtitle {
+        color: var(--color-text);
+    }
+   
+    .hero,
+    .details,
+    .plan,
+    .interior {
+        margin-bottom: 40px;
+    }
+
+    .details__item, .info {
+        flex-direction: column;
+    }
+
+    .contact__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .plan__all {
+        flex-direction: column;
+    }
+
+    .project__content {
+        padding: 0;
+    }
+
+    .interior__img:nth-child(2) {
+        display: none;    
+    }
+
+    .footer__title {
+        margin-bottom: 20px;
+    }
+
+    .footer__form {
+        padding-left: 0;
     }
 }
 

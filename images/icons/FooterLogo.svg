@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="58" viewBox="0 0 39 58" fill="none">
+  <g opacity="0.6">
+    <rect x="17.7681" y="0.61084" width="3.42276" height="57.3892" rx="1.71138" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(0.505186 -0.863011 0.868989 0.494832 17.2504 2.92334)" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(-0.505186 -0.863011 -0.868989 0.494832 21.7496 2.92334)" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(0.505186 -0.863011 0.868989 0.494832 17.2504 17.6816)" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(-0.505186 -0.863011 -0.868989 0.494832 21.7496 17.6816)" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(0.505186 -0.863011 0.868989 0.494832 17.2504 32.5352)" fill="white"/>
+    <rect width="3.38763" height="23.0593" rx="1.69381" transform="matrix(-0.505186 -0.863011 -0.868989 0.494832 21.7496 32.5352)" fill="white"/>
+    <ellipse cx="34.3531" cy="55.7049" rx="2.32714" ry="2.29523" fill="white"/>
+  </g>
+</svg>
