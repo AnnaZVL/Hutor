@@ -38,6 +38,14 @@
     .interior__container {
         margin-left: 0px;    
     }
+
+    .interior__images {           
+        transform: translateX(15px);
+    }
+
+    .interior__images.transform {
+        transform: translateX(-120px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -147,18 +155,13 @@
         gap: 30px;
     }
 
-    .project__container::after {
-        display: none;
-    }
-
     .project__content {
         padding-top: 60px;
         position: relative;
     }
 
-
-    .swiper-slide {
-        text-align: center;
+    .project__slide {
+        grid-template-columns: 1fr;
     }
 
     .swiper-slide img {

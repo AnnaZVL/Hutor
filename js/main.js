@@ -8,10 +8,10 @@ $burgerBtn.addEventListener('click', () => {
 })
 
 // Swiper
-const swiper = new Swiper('.project__swiper', {   
-   
+const swiper = new Swiper('.project__swiper', {     
     direction: 'horizontal',
-    loop: true,
+    loop: true,    
+    effect: "fade",
     slidesPerView: 1,  
     pagination: {
         el: '.swiper-pagination',
@@ -19,7 +19,46 @@ const swiper = new Swiper('.project__swiper', {
     },
   });
 
-// Галерея секции Интерьер
-Fancybox.bind('[data-fancybox="gallery"]', {
+//   Сдвиг фотов секции Интерьер
+// const $images = document.querySelector('.interior__images');
+// $images.classList.remove('transform')
+
+// $images.addEventListener('click', () => {
+//     $images.classList.toggle('transform')
+// })
+
+// // Галерея секции Интерьер
+// Fancybox.bind('[data-fancybox="gallery"]', {
     
+// });
+
+// Смена языка
+const $select = document.querySelectorAll('.btn-lang'),
+$btn = document.querySelector('.dropbtn'),
+    $blockRu = document.querySelectorAll('.ru'),
+    $blockEn = document.querySelectorAll('.en');
+
+$btn.textContent = 'RU';
+$select.forEach(button => {
+    button.addEventListener('click', () => {
+    
+    if (button.id === 'en') {
+            $blockRu.forEach(elem => {
+                elem.style.display = 'none'
+                $blockEn.forEach(elem => {
+                    elem.style.display = 'block'
+                })
+                $btn.textContent = 'EN'
+            })        
+        } else {
+            $blockRu.forEach(elem => {
+                elem.style.display = 'block'
+                $blockEn.forEach(elem => {
+                    elem.style.display = 'none'
+                })
+
+                $btn.textContent = 'RU'
+            })       
+        }
+    })
 });

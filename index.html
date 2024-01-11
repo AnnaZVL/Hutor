@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -24,16 +25,22 @@
                         <nav class="header__nav">
                             <ul class="header__list">
                                 <li class="header__item">
-                                    <a href="#project" class="header__link link" aria-label="Перейти к проекту">О
+                                    <a href="#project" class="header__link link ru" aria-label="Перейти к проекту">О
                                         ПРОЕКТЕ</a>
+                                    <a href="#project" class="header__link link en" aria-label="Перейти к проекту">ABOUT
+                                        PROJECT</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="#interior" class="header__link link"
+                                    <a href="#interior" class="header__link link ru"
                                         aria-label="Перейти к галереи">ВИРТУАЛЬНЫЙ ТУР</a>
+                                    <a href="#interior" class="header__link link en"
+                                        aria-label="Перейти к галерее">VIRTUAL TOUR</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="#contacts" class="header__link link"
+                                    <a href="#contacts" class="header__link link ru"
                                         aria-label="Перейти к контактам">КОНТАКТЫ</a>
+                                    <a href="#contacts" class="header__link link en"
+                                        aria-label="Перейти к контактам">CONTACTS</a>
                                 </li>
                             </ul>
                             <a class="header__link link" href="tel:79157650956"
@@ -46,17 +53,13 @@
                         <span class="burger__line"></span>
                         <span class="burger__line"></span>
                     </button>
-                    <button class="header__lang btn">RU
-                        <svg class="btn__arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="4"
-                            viewBox="0 0 6 4" fill="none">
-                            <path
-                                d="M2.8188 3.38601C2.64034 3.21307 2.64034 2.93268 2.8188 2.75974L5.03053 0.616453C5.20899 0.443512 5.49834 0.443512 5.6768 0.616453C5.85526 0.789394 5.85526 1.06979 5.6768 1.24273L3.46508 3.38601C3.28661 3.55895 2.99727 3.55895 2.8188 3.38601Z"
-                                fill="white" />
-                            <path
-                                d="M3.37071 3.38601C3.54917 3.21307 3.54917 2.93268 3.37071 2.75974L1.15899 0.616453C0.980525 0.443512 0.691179 0.443512 0.512715 0.616453C0.334252 0.789394 0.334252 1.06979 0.512715 1.24273L2.72444 3.38601C2.9029 3.55895 3.19225 3.55895 3.37071 3.38601Z"
-                                fill="white" />
-                        </svg>
-                    </button>
+                    <div class="header__lang">
+                        <div class="dropbtn"></div>
+                        <div class="dropdown-content">
+                            <button class="btn-lang btn" id="ru">RU</button>
+                            <button class="btn-lang btn" id="en">EN</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -65,45 +68,61 @@
                 <img class="hero__img" src="./images/Hero_bg.webp" alt="Фото домика в лесу">
 
                 <div class="hero__body">
-                    <h1 class="hero__title">hutor</h1>
-                    <span class="hero__subtitle">хутор - частный дом</span>
+                    <!-- <h1 class="hero__title">hutor</h1> -->
+                    <img src="./images/hutor.png" alt="">
+                    <span class="hero__subtitle ru">хутор - частный дом</span>
+                    <span class="hero__subtitle en">farm - private house</span>
                 </div>
 
             </section>
             <section class="details">
                 <div class="container details__container">
                     <div class="details__content">
-                        <h2 class="details__title title">ХУТОР</h2>
+                        <h2 class="details__title title ru">ХУТОР</h2>
+                        <h2 class="details__title title en">farm</h2>
                         <ul class="details__list">
                             <li class="details__item">
-                                <span class="details__subtitle">Частный дом</span>
+                                <span class="details__subtitle ru">Частный дом</span>
+                                <span class="details__subtitle en">A private house</span>
+                            </li>
+                            <li class="details__item">
+                                <span class="details__subtitle ru">Площадь: </span>
+                                <span class="details__subtitle en">Square: </span>
+                                <span class="details__text ru">45 м²</span>
+                                <span class="details__text en">45 m²</span>
+                            </li>
+                            <li class="details__item">
+                                <span class="details__subtitle ru">Год постройки: </span>
+                                <span class="details__subtitle en">Year of construction: </span>
 
-                            </li>
-                            <li class="details__item">
-                                <span class="details__subtitle">Площадь: </span>
-                                <span class="details__text">45 м²</span>
-                            </li>
-                            <li class="details__item">
-                                <span class="details__subtitle">Год постройки: </span>
                                 <span class="details__text">2022</span>
                             </li>
                             <li class="details__item">
-                                <span class="details__subtitle">Дизайн: </span>
-                                <span class="details__text">Алексей Ульяночкин</span>
+                                <span class="details__subtitle ru">Дизайн: </span>
+                                <span class="details__subtitle en">Design: </span>
+                                <span class="details__text ru">Алексей Ульяночкин</span>
+                                <span class="details__text en">Alexey Ulyanochkin</span>
                             </li>
                             <li class="details__item">
-                                <span class="details__subtitle">Расположение: </span>
-                                <span class="details__text">Ленинградская область, Россия</span>
+                                <span class="details__subtitle ru">Расположение: </span>
+                                <span class="details__subtitle en">Location: </span>
+                                <span class="details__text ru">Ленинградская область, Россия</span>
+                                <span class="details__text en">Leningrad region, Russia</span>
                             </li>
                         </ul>
                         <ul class="details__info info">
                             <li class="info__item">
-                                <span class="info__number">45 м²</span>
-                                <span class="info__text">площадь дома</span>
+                                <span class="info__number ru">45 м²</span>
+                                <span class="info__number en">45 m²</span>
+                                <span class="info__text ru">площадь дома</span>
+                                <span class="info__text en">house area</span>
                             </li>
                             <li class="info__item">
-                                <span class="info__number">120 км</span>
-                                <span class="info__text">от Санкт-Петербурга
+                                <span class="info__number ru">120 км</span>
+                                <span class="info__number en">120 km</span>
+                                <span class="info__text ru">от Санкт-Петербурга
+                                </span>
+                                <span class="info__text en">from St. Petersburg
                                 </span>
                             </li>
                         </ul>
@@ -117,28 +136,98 @@
                 <div class="container project__container">
                     <div class="project__swiper swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./images/project.webp" data-fancybox="gallery"
-                                    alt="изображение интерьера"></div>
-                            <div class="swiper-slide"><img src="./images/details.webp" data-fancybox="gallery" alt="">
+                            <div class="swiper-slide project__slide">
+                                <img src="./images/project.webp" data-fancybox="gallery" alt="изображение интерьера">
+                                <div class="project__content">
+                                    <h2 class="project__title title ru">О ПРОЕКТЕ</h2>
+                                    <h2 class="project__title title en">ABOUT THE PROJECT</h2>
+                                    <p class="project__text ru">
+                                        Проект частного дома в&nbsp;120 километрах от&nbsp;Санкт-Петербурга. Главной
+                                        задачей
+                                        проекта
+                                        было разработать помещение с&nbsp;минимальной площадью
+                                        и&nbsp;максимальным функционалом. Площадь дома 45&nbsp;м&sup2;, терраса
+                                        18&nbsp;м.
+                                    </p>
+                                    <p class="project__text en">
+                                        Project of&nbsp;a&nbsp;private house 120 kilometers from St. Petersburg. The
+                                        main task of&nbsp;the project was to&nbsp;develop a&nbsp;room with
+                                        a&nbsp;minimum area and maximum functionality. House area 45&nbsp;m&sup2;,
+                                        terrace 18&nbsp;m.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="swiper-slide"><img src="./images/project.webp" data-fancybox="gallery"
-                                    alt="изображение интерьера"></div>
+                            <div class="swiper-slide project__slide">
+                                <img src="./images/interior_1.webp" data-fancybox="gallery" alt="изображение интерьера">
+                                <div class="project__content">
+                                    <h2 class="project__title title ru">О ПРОЕКТЕ</h2>
+                                    <h2 class="project__title title en">ABOUT THE PROJECT</h2>
+                                    <p class="project__text ru">
+                                        Проект частного дома в&nbsp;120 километрах от&nbsp;Санкт-Петербурга. Главной
+                                        задачей
+                                        проекта
+                                        было разработать помещение с&nbsp;минимальной площадью
+                                        и&nbsp;максимальным функционалом. Площадь дома 45&nbsp;м&sup2;, терраса
+                                        18&nbsp;м.
+                                    </p>
+                                    <p class="project__text en">
+                                        Project of&nbsp;a&nbsp;private house 120 kilometers from St. Petersburg. The
+                                        main task of&nbsp;the project was to&nbsp;develop a&nbsp;room with
+                                        a&nbsp;minimum area and maximum functionality. House area 45&nbsp;m&sup2;,
+                                        terrace 18&nbsp;m.
+                                    </p>
+                                    <p class="project__text ru">Дом каркасный, внутри обшит
+                                        панелями из&nbsp;фанеры,
+                                        снаружи
+                                        фальцевой
+                                        кровлей и&nbsp;планкеном из&nbsp;лиственницы. Предназначен для круглогодичного
+                                        проживания.
+                                        Обилие натуральных материалов создает уютную атмосферу. </p>
+                                    <p class="project__text en">The house is&nbsp;frame, covered inside with plywood
+                                        panels, outside with seam roofing and larch planks. Designed for year-round use.
+                                        The abundance of&nbsp;natural materials creates a&nbsp;cozy atmosphere. </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide project__slide">
+                                <img src="./images/details.webp" data-fancybox="gallery" alt="изображение интерьера">
+                                <div class="project__content">
+                                    <h2 class="project__title title ru">О ПРОЕКТЕ</h2>
+                                    <h2 class="project__title title en">ABOUT THE PROJECT</h2>
+                                    <p class="project__text ru">
+                                        Проект частного дома в&nbsp;120 километрах от&nbsp;Санкт-Петербурга. Главной
+                                        задачей
+                                        проекта
+                                        было разработать помещение с&nbsp;минимальной площадью
+                                        и&nbsp;максимальным функционалом. Площадь дома 45&nbsp;м&sup2;, терраса
+                                        18&nbsp;м.
+                                    </p>
+                                    <p class="project__text en">
+                                        Project of&nbsp;a&nbsp;private house 120 kilometers from St. Petersburg. The
+                                        main task of&nbsp;the project was to&nbsp;develop a&nbsp;room with
+                                        a&nbsp;minimum area and maximum functionality. House area 45&nbsp;m&sup2;,
+                                        terrace 18&nbsp;m.
+                                    </p>
+                                    <p class="project__text ru">Дом каркасный, внутри обшит
+                                        панелями из&nbsp;фанеры,
+                                        снаружи
+                                        фальцевой
+                                        кровлей и&nbsp;планкеном из&nbsp;лиственницы. Предназначен для круглогодичного
+                                        проживания.
+                                        Обилие натуральных материалов создает уютную атмосферу. </p>
+                                    <p class="project__text en">The house is&nbsp;frame, covered inside with plywood
+                                        panels, outside with seam roofing and larch planks. Designed for year-round use.
+                                        The abundance of&nbsp;natural materials creates a&nbsp;cozy atmosphere. </p>
+                                    <p class="project__text ru">Главной особенностью интерьера
+                                        является сочетание
+                                        современного
+                                        дизайна в&nbsp;стиле барн и&nbsp;функциональной наполняющей интерьера.
+                                    </p>
+                                    <p class="project__text en">The main feature of&nbsp;the interior is&nbsp;the
+                                        combination of&nbsp;modern barn-style design and functional interior filling.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="project__content">
-                        <h2 class="project__title title">О ПРОЕКТЕ</h2>
-                        <p class="project__text">
-                            Проект частного дома в&nbsp;120 километрах от&nbsp;Санкт-Петербурга. Главной задачей проекта
-                            было разработать помещение с&nbsp;минимальной площадью
-                            и&nbsp;максимальным функционалом. Площадь дома 45&nbsp;м&sup2;, терраса 18&nbsp;м.
-                        </p>
-                        <p class="project__text">Дом каркасный, внутри обшит панелями из&nbsp;фанеры, снаружи фальцевой
-                            кровлей и&nbsp;планкеном из&nbsp;лиственницы. Предназначен для круглогодичного проживания.
-                            Обилие натуральных материалов создают уютную атмосферу. </p>
-                        <p class="project__text">Главной особенностью интерьера является сочетание современного
-                            дизайна в&nbsp;стиле барн и&nbsp;функциональной наполняющей интерьера.
-                        </p>
                         <div class="project__pagination swiper-pagination"></div>
                     </div>
                 </div>
@@ -146,32 +235,45 @@
             <section class="plan">
                 <div class="container plan__container">
                     <div class="plan__content">
-                        <h2 class="plan__title title">ПЛАН</h2>
+                        <h2 class="plan__title title ru">ПЛАН</h2>
+                        <h2 class="plan__title title en">PLAN</h2>
                         <ol type="1" class="plan__list">
                             <li class="plan__item">
-                                <span class="plan__subtitle">Холл, кухня</span>
-                                <span class="plan__text">7,7 м²</span>
+                                <span class="plan__subtitle ru">Холл, кухня</span>
+                                <span class="plan__subtitle en">Hall, kitchen</span>
+                                <span class="plan__text ru">7,7 м²</span>
+                                <span class="plan__text en">7,7 m²</span>
                             </li>
                             <li class="plan__item">
-                                <span class="plan__subtitle">Гостинная</span>
-                                <span class="plan__text">21,5 м²</span>
+                                <span class="plan__subtitle ru">Гостинная</span>
+                                <span class="plan__subtitle en">Living room</span>
+                                <span class="plan__text ru">21,5 м²</span>
+                                <span class="plan__text en">21,5 m²</span>
                             </li>
                             <li class="plan__item">
-                                <span class="plan__subtitle">Спальная</span>
-                                <span class="plan__text">12 м²</span>
+                                <span class="plan__subtitle ru">Спальная</span>
+                                <span class="plan__subtitle en">Bedroom</span>
+                                <span class="plan__text ru">12 м²</span>
+                                <span class="plan__text en">12 m²</span>
                             </li>
                             <li class="plan__item">
-                                <span class="plan__subtitle">Ванная</span>
-                                <span class="plan__text">4 м²</span>
+                                <span class="plan__subtitle ru">Ванная</span>
+                                <span class="plan__subtitle en">Bathroom</span>
+                                <span class="plan__text ru">4 м²</span>
+                                <span class="plan__text en">4 m²</span>
                             </li>
                             <li class="plan__item">
-                                <span class="plan__subtitle">Мансарда</span>
-                                <span class="plan__text">12,5 м²</span>
+                                <span class="plan__subtitle ru">Мансарда</span>
+                                <span class="plan__subtitle en">Attic</span>
+                                <span class="plan__text ru">12,5 м²</span>
+                                <span class="plan__text en">12,5 m²</span>
                             </li>
                         </ol>
                         <div class="plan__all">
-                            <span class="plan__subtitle">Обшая площадь:</span>
-                            <span class="plan__text">45,2 м²</span>
+                            <span class="plan__subtitle ru">Обшая площадь:</span>
+                            <span class="plan__subtitle en">Total area:</span>
+                            <span class="plan__text ru">45,2 м²</span>
+                            <span class="plan__text en">45,2 m²</span>
                         </div>
                     </div>
                     <div class="plan__img">
@@ -182,41 +284,57 @@
                     </div>
                 </div>
             </section>
-            <section class="interior" id="interior">
+            <!-- <section class="interior" id="interior">
                 <div class="container interior__container">
-                    <h2 class="interior__title title">ИНТЕРЬЕР</h2>
+                    <h2 class="interior__title title ru">ИНТЕРЬЕР</h2>
+                    <h2 class="interior__title title en">INTERIOR</h2>
+                </div>
+                <div class="interior__inner">
                     <div class="interior__images">
                         <img class="interior__img" data-fancybox="gallery" src="./images/interior_1.webp" alt="">
-                        <img class="interior__img" data-fancybox="gallery" src="./images/interior_2.webp" alt="">
+                        <img class="interior__img" data-fancybox="gallery" src="./images/interior_2.png" alt="">
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer class="footer">
             <div class="container footer__container">
-                <div class="footer__title title">ЗАПИШИТЕСЬ НА ПРОСМОТР</div>
+                <div class="footer__title title ru">ЗАПИШИТЕСЬ НА ПРОСМОТР</div>
+                <div class="footer__title title en">SIGN UP FOR A VIEWING</div>
                 <div class="footer__top">
-                    <form class="footer__form form" action="#">
-                        <input class="form__input" type="text" name="name" placeholder="Имя" maxlength="50" required>
-                        <input class="form__input" type="text" name="name" placeholder="Телефон" required>
-                        <button class="form__btn btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <form class="footer__form form" action="#" autocomplete="on">
+                        <input class="form__input ru" type="text" name="name" placeholder="Имя" maxlength="50" required>
+                        <input class="form__input en" type="text" name="name" placeholder="Name" maxlength="50"
+                            required>
+                        <input class="form__input ru" type="text" name="name" placeholder="Телефон" required>
+                        <input class="form__input en" type="text" name="name" placeholder="Telephone" required>
+                        <button class="form__btn btn" type="submit">
+                            <span class="ru">ОСТАВИТЬ ЗАЯВКУ</span>
+                            <span class="en">SUBMIT YOUR APPLICATION</span>
+                        </button>
                     </form>
                     <div class="footer__contacts contact" id="contacts">
                         <div class="contact__item">
-                            <span class="contact__title">Телефон</span>
+                            <span class="contact__title ru">Телефон</span>
+                            <span class="contact__title en">Telephone</span>
                             <a class="contact__link contact__link--tel link" href="tel:79157650956
                             ">+7 915 765-09-56
                             </a>
                         </div>
                         <div class="contact__item">
-                            <span class="contact__title">Почта</span>
+                            <span class="contact__title ru">Почта</span>
+                            <span class="contact__title en">Mail</span>
                             <a class="contact__link link" href="mailto:info@ds-au.ru">info@ds-au.ru
                             </a>
                         </div>
                         <div class="contact__item">
-                            <span class="contact__title">Адрес</span>
-                            <span class="contact__title">Санкт-Петербург, </span>
-                            <span class="contact__title">Ленинский пр. 151, офис 402
+                            <span class="contact__title ru">Адрес</span>
+                            <span class="contact__title en">Address</span>
+                            <span class="contact__title ru">Санкт-Петербург, </span>
+                            <span class="contact__title en">Saint Petersburg, </span>
+                            <span class="contact__title ru">Ленинский пр. 151, офис 402
+                            </span>
+                            <span class="contact__title en">Leninsky Ave. 151, office 402
                             </span>
                         </div>
                     </div>
@@ -227,21 +345,35 @@
                     </a>
                     <ul class="footer__social social">
                         <li class="social__item">
-                            <a class="social__link link" href="https://vk.com" target="_blank"
+                            <a class="social__link" href="https://vk.com" target="_blank"
                                 aria-label="Перейти на страницу во Вконтакте">
-                                <img src="./images/icons/VK.svg" alt="Иконка В котакте">
+                                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="28"
+                                    viewBox="0 0 48 28" fill="none">
+                                    <path
+                                        d="M46.8994 1.89615C47.2348 0.802219 46.8994 0 45.3137 0H40.0606C38.724 0 38.1131 0.694002 37.7778 1.45623C37.7778 1.45623 35.1069 7.8528 31.3222 12.0003C30.1005 13.2072 29.5424 13.5883 28.8765 13.5883C28.5435 13.5883 28.0597 13.2072 28.0597 12.1133V1.89615C28.0597 0.583432 27.674 0 26.5601 0H18.3056C17.472 0 16.969 0.606957 16.969 1.18568C16.969 2.42783 18.8613 2.71484 19.0554 6.21543V13.8094C19.0554 15.4727 18.7512 15.7762 18.0804 15.7762C16.3007 15.7762 11.9698 9.35608 9.39953 2.00672C8.89889 0.578727 8.39347 0.0023535 7.05204 0.0023535H1.80134C0.299425 0.0023535 0 0.696354 0 1.45858C0 2.82776 1.77978 9.60309 8.29046 18.5639C12.6309 24.6829 18.7416 28 24.3085 28C27.6453 28 28.0573 27.2637 28.0573 25.9933V21.3682C28.0573 19.8955 28.3759 19.5991 29.4322 19.5991C30.2083 19.5991 31.545 19.9849 34.6614 22.9326C38.2209 26.4285 38.8102 27.9976 40.8104 27.9976H46.0611C47.5606 27.9976 48.3103 27.2613 47.8792 25.8074C47.4073 24.3606 45.7065 22.2551 43.4501 19.7637C42.2236 18.3428 40.3912 16.8136 39.833 16.0491C39.0545 15.0634 39.2797 14.6281 39.833 13.753C39.8354 13.7553 46.2335 4.90506 46.8994 1.89615Z"
+                                        fill="white" fill-opacity="0.6" />
+                                </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link link" href="https://t.me" target="_blank"
-                                aria-label="Перейти в Телеграм">
-                                <img src="./images/icons/Telegram.svg" alt="Иконка Телеграм">
+                            <a class="social__link" href="https://t.me" target="_blank" aria-label="Перейти в Телеграм">
+                                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="38" height="31"
+                                    viewBox="0 0 38 31" fill="none">
+                                    <path
+                                        d="M35.4351 0.203832L1.77437 12.8299C-0.522839 13.7274 -0.509549 14.974 1.3529 15.5298L9.99494 18.1522L29.9901 5.88068C30.9356 5.32112 31.7994 5.62213 31.0894 6.23525L14.8893 20.4569H14.8855L14.8893 20.4588L14.2932 29.1236C15.1665 29.1236 15.5519 28.7339 16.0417 28.2741L20.2393 24.3036L28.9706 30.577C30.5806 31.4394 31.7367 30.9962 32.1373 29.1273L37.869 2.85204C38.4556 0.563945 36.971 -0.472071 35.4351 0.203832Z"
+                                        fill="white" fill-opacity="0.6" />
+                                </svg>
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link link" href="https://www.youtube.com/" target="_blank"
+                            <a class="social__link" href="https://www.youtube.com/" target="_blank"
                                 aria-label="Перейти на Ютуб">
-                                <img src="./images/icons/IconYoutube.svg" alt="Иконка Ютуб">
+                                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="47" height="32"
+                                    viewBox="0 0 47 32" fill="none">
+                                    <path
+                                        d="M18.8 22.8571L30.9965 16L18.8 9.14286V22.8571ZM45.966 4.96C46.2715 6.03429 46.483 7.47429 46.624 9.30286C46.7885 11.1314 46.859 12.7086 46.859 14.08L47 16C47 21.0057 46.624 24.6857 45.966 27.04C45.3785 29.0971 44.0155 30.4229 41.9005 30.9943C40.796 31.2914 38.775 31.4971 35.673 31.6343C32.618 31.7943 29.8215 31.8629 27.2365 31.8629L23.5 32C13.6535 32 7.52 31.6343 5.0995 30.9943C2.9845 30.4229 1.6215 29.0971 1.034 27.04C0.7285 25.9657 0.517 24.5257 0.376 22.6971C0.2115 20.8686 0.141 19.2914 0.141 17.92L0 16C0 10.9943 0.376 7.31429 1.034 4.96C1.6215 2.90286 2.9845 1.57714 5.0995 1.00571C6.204 0.708572 8.225 0.502857 11.327 0.365714C14.382 0.205714 17.1785 0.137143 19.7635 0.137143L23.5 0C33.3465 0 39.48 0.365714 41.9005 1.00571C44.0155 1.57714 45.3785 2.90286 45.966 4.96Z"
+                                        fill="white" fill-opacity="0.6" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
