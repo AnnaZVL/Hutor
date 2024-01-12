@@ -67,9 +67,9 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: contain; 
+    object-fit: cover; 
 }
   
 a {
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .details__container {
     display: grid;
-    grid-template-columns: 1fr 505px;
+    grid-template-columns: 1fr 40%;
     gap: 16px;
 }
 
@@ -404,8 +404,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .project__swiper {
+    padding-bottom: 20px;
     width: 100%;
-    height: 755px;
+    height: 795px;
 }
 
 .project__slide {
@@ -415,8 +416,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    left: 51%;
-    bottom: 27%;
+    left: 25%;
+    bottom: 0%;
     z-index: 10;
     width: 62px;
 }
@@ -456,6 +457,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 108px;
     display: grid;
     grid-template-columns: 290px 1fr;
+    /* grid-template-rows: 300px auto; */
     gap: 20px;
 }
 
@@ -498,6 +500,13 @@ h1, h2, h3, h4, h5, h6, p {
 .plan__img {
     padding-top: 87px;
     padding-left: 37px;
+    height: 100%;    
+}
+
+.plan__img img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .plan__img-big {

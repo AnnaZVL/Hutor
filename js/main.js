@@ -12,22 +12,25 @@ const swiper = new Swiper('.project__swiper', {
     direction: 'horizontal',
     loop: true,    
     effect: "fade",
+    fadeEffect: {
+        crossFade: true
+      },
     slidesPerView: 1,  
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        clickable: true,        
     },
   });
 
 //   Сдвиг фотов секции Интерьер
-// const $images = document.querySelector('.interior__images');
-// $images.classList.remove('transform')
+const $images = document.querySelector('.interior__images');
+$images.classList.remove('transform')
 
-// $images.addEventListener('click', () => {
-//     $images.classList.toggle('transform')
-// })
+$images.addEventListener('click', () => {
+    $images.classList.toggle('transform')
+})
 
-// // Галерея секции Интерьер
+// Галерея секции Интерьер
 // Fancybox.bind('[data-fancybox="gallery"]', {
     
 // });
