@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    left: 25%;
+    left: 18%;
     bottom: 0%;
     z-index: 10;
     width: 62px;
